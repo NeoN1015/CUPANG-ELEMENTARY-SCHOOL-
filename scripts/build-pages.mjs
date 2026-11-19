@@ -56,8 +56,22 @@ for (const page of pages) {
 
 await writeFile(path.join(output, "index.html"), await readFile(path.join(output, "home.html")));
 await cp(path.join(root, "css", "site.css"), path.join(output, "css", "site.css"), { recursive: true });
-await cp(path.join(root, "js", "site.js"), path.join(output, "js", "site.js"), { recursive: true });
-await cp(path.join(root, "js", "calendar.js"), path.join(output, "js", "calendar.js"), { recursive: true });
+await mkdir(path.join(output, "js"), { recursive: true });
+const siteJs = replaceOnce(
+  await readFile(path.join(root, "js", "site.js"), "utf8"),
+  /    fetch\("api\/events"\)[\s\S]*?(?=\r?\n  }\r?\n\}\)\(\);)/,
+  '    const li = document.createElement("li");\n    li.className = "next-empty";\n    li.textContent = "No upcoming events posted yet. Check back soon.";\n    list.replaceChildren(li);',
+  "home event API request"
+);
+await writeFile(path.join(output, "js", "site.js"), siteJs);
+
+const calendarJs = replaceOnce(
+  await readFile(path.join(root, "js", "calendar.js"), "utf8"),
+  /    fetch\("api\/events"\)[\s\S]*?(?=\r?\n\}\);\s*$)/,
+  '    if (eventTable) eventTable.innerHTML = \'<tr><td colspan="4" class="muted">No events posted yet.</td></tr>\';',
+  "calendar event API request"
+);
+await writeFile(path.join(output, "js", "calendar.js"), calendarJs);
 await cp(path.join(root, "pics", "web"), path.join(output, "pics", "web"), { recursive: true });
 
 console.log(`Built visitor-only Pages site in ${output}`);
