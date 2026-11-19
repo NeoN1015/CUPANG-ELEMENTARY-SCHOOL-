@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cupang Elementary School · Muntinlupa City</title>
+    <meta name="description" content="Cupang Elementary School (CESMAIN), a DepEd public elementary school in Barangay Cupang, Muntinlupa City, established 1932.">
+    <meta name="theme-color" content="#0f3a20">
+    <link rel="icon" href="pics/web/seal.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js" defer></script>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="eave" aria-hidden="true"></div>
+    <header class="topnav">
+        <a class="mark" href="home.html"><img src="pics/web/seal.png" alt="" width="40" height="40">CESMAIN</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+        <nav id="site-nav" aria-label="Main">
+            <a href="home.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="home.html#calendar">Calendar</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="login-btn" type="button" data-open-login><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Log in</span></button>
+    </header>
+    <div class="account-form" role="dialog" aria-label="Log in"></div>
+
+    <header class="signboard">
+        <img class="seal" src="pics/web/seal.png" alt="Official seal of Cupang Elementary School, Muntinlupa City, 1932" width="196" height="196">
+        <div>
+            <h1>Cupang Elementary School</h1>
+            <p class="painted-line">Est. 1932 · School ID 136912 · Muntinlupa City</p>
+            <p class="motto">Culture of Excellence in Service and Management</p>
+        </div>
+    </header>
+
+    <main id="main">
+    <section class="bays" data-shutters aria-label="At a glance">
+        <div class="bay">
+            <h2>Next on the calendar</h2>
+            <ol class="next-list" id="next-events" aria-live="polite"><li class="next-empty">Loading events…</li></ol>
+            <div class="push"><a class="btn" href="#calendar">Open the full calendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+        <figure class="bay photo poster">
+            <img src="pics/web/announcement1.jpg" alt="CESMAIN announcement: class schedule per grade level, school year 2024–2025" width="1400" height="788" loading="eager">
+            <figcaption>Latest notice: class schedule per grade level, SY 2024–2025. <a href="#announcements">See all notices</a></figcaption>
+        </figure>
+        <div class="bay">
+            <h2>Visit the school</h2>
+            <address class="addr">C2JX+5R4, Manuel L. Quezon<br>Barangay Cupang, Muntinlupa City</address>
+            <p style="margin-top:12px">Questions for the school? Your message goes straight to the principal's office.</p>
+            <div class="push"><a class="btn ghost" href="contact.html">Write to the principal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="split">
+            <div>
+                <h2 style="font-size:clamp(2.25rem,5vw,3.75rem);margin-bottom:20px">Serving Barangay Cupang since 1932</h2>
+                <p class="lede">Cupang Elementary School is a public elementary school in Barangay Cupang, Muntinlupa City, under the Department of Education through the Schools Division Office of Muntinlupa City.</p>
+                <p style="margin-top:16px;color:var(--on-wall-2)">It continues to provide quality education to the residents of Barangay Cupang and its neighboring areas.</p>
+                <p style="margin-top:24px"><a class="wall-link" href="about.html">Read the school's history and values</a></p>
+            </div>
+            <figure class="span-photo plain" style="--ratio: 2 / 1">
+                <img src="pics/web/cesbg.jpg" alt="The front of Cupang Elementary School with the school name lettered on the wall" width="1400" height="700" loading="lazy">
+                <figcaption>The school front, Manuel L. Quezon St.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section" id="facilities">
+        <div class="section-head">
+            <h2>Our facilities</h2>
+            <p>Around the campus. <a class="wall-link" href="facilities.html">See every facility</a></p>
+        </div>
+        <div class="bays top gallery" data-shutters>
+            <figure class="bay photo"><img src="pics/web/fac1.jpg" alt="Covered stage with wooden ceiling" width="1400" height="1050" loading="lazy"><figcaption>Covered stage</figcaption></figure>
+            <figure class="bay photo"><img src="pics/web/fac2.jpg" alt="Municipal Building 1 and the school clinic" width="1400" height="1050" loading="lazy"><figcaption>Municipal Building 1 and clinic</figcaption></figure>
+            <figure class="bay photo"><img src="pics/web/fac3.jpg" alt="A long school corridor" width="1050" height="1400" loading="lazy"><figcaption>Corridor</figcaption></figure>
+            <figure class="bay photo"><img src="pics/web/fac4.jpg" alt="School garden with trees and a painted fence" width="1400" height="1050" loading="lazy"><figcaption>Garden</figcaption></figure>
+            <figure class="bay photo"><img src="pics/web/fac5.jpg" alt="Classroom building beside the covered area" width="1400" height="1050" loading="lazy"><figcaption>Classroom building</figcaption></figure>
+            <figure class="bay photo"><img src="pics/web/fac6.jpg" alt="Covered court" width="1400" height="1050" loading="lazy"><figcaption>Covered court</figcaption></figure>
+        </div>
+    </section>
+
+    <section class="section" id="calendar">
+        <div class="section-head">
+            <h2>School calendar</h2>
+            <p>Events posted by the principal's office. Teacher-proposed events appear here once approved.</p>
+        </div>
+        <div class="cal-board">
+            <div>
+                <div id="event-calendar"></div>
+                <div class="event-detail" id="event-detail" tabindex="-1" hidden>
+                    <button type="button" class="detail-close" aria-label="Close details" onclick="this.parentElement.hidden=true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+                    <h4></h4><p class="when"></p><p class="desc"></p>
+                </div>
+                <div class="legend" aria-label="Event categories">
+                    <span><i style="--c:#1f5a32"></i>General</span><span><i style="--c:#a3332a"></i>Holiday</span><span><i style="--c:#5b4a8a"></i>Exam</span><span><i style="--c:#7a4a2a"></i>PTA</span><span><i style="--c:#8a6410"></i>Program</span>
+                </div>
+            </div>
+            <div>
+                <h3>All events</h3>
+                <div class="table-scroll">
+                    <table class="event-list">
+                        <thead><tr><th scope="col">Event</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Details</th></tr></thead>
+                        <tbody id="eventTable"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="announcements">
+        <div class="section-head">
+            <h2>Notices</h2>
+            <p>Posters from the school, School Year 2024–2025.</p>
+        </div>
+        <div class="bays top posters" data-shutters>
+            <figure class="bay photo poster"><a href="pics/web/announcement1.jpg"><img src="pics/web/announcement1.jpg" alt="Class schedule per grade level, SY 2024–2025" width="1400" height="788" loading="lazy"></a><figcaption>Class schedule per grade level</figcaption></figure>
+            <figure class="bay photo poster"><a href="pics/web/announcement2.jpg"><img src="pics/web/announcement2.jpg" alt="Kindergarten schedule, Monday to Friday: 1st session 6:50–7:00 am and 9:50–10:00 am, 2nd session 10:20–10:30 am and 1:20–1:30 pm" width="1400" height="788" loading="lazy"></a><figcaption>Kindergarten sessions</figcaption></figure>
+            <figure class="bay photo poster"><a href="pics/web/announcement3.jpg"><img src="pics/web/announcement3.jpg" alt="Morning session schedule for Grades I, III and VI" width="1400" height="788" loading="lazy"></a><figcaption>Morning session: Grades I, III, VI</figcaption></figure>
+        </div>
+        <div class="split" style="margin-top:clamp(40px,6vw,72px)">
+            <figure class="span-photo plain" style="--ratio: 990 / 1400; max-width: 440px">
+                <img src="pics/web/news2.jpg" alt="Cupang Elementary School celebrates 2025 National Women's Month" width="990" height="1400" loading="lazy">
+            </figure>
+            <div>
+                <h2 style="font-size:clamp(2.25rem,5vw,3.75rem);margin-bottom:18px">National Women's Month 2025</h2>
+                <p class="lede">CESMAIN proudly takes part in the celebration of National Women's Month.</p>
+                <p style="margin-top:14px;color:var(--on-wall-2)">"Babae sa lahat ng sektor, aangat ang bukas sa Bagong Pilipinas."</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <div class="brand"><img src="pics/web/seal.png" alt="" width="72" height="72"><b>Cupang Elementary School</b></div>
+                <p style="margin-top:14px">Culture of Excellence in Service and Management</p>
+            </div>
+            <div>
+                <h2>Visit</h2>
+                <address>C2JX+5R4, Manuel L. Quezon<br>Barangay Cupang, Muntinlupa City<br>Metro Manila</address>
+            </div>
+            <div>
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="about.html">About the school</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="home.html#calendar">School calendar</a></li>
+                    <li><a href="contact.html">Write to the principal</a></li>
+                    <li><a class="fb" href="https://web.facebook.com/profile.php?id=100057127043044" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg>Facebook page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="base"><span>Cupang Elementary School Main · School ID 136912</span><span>Under DepEd Schools Division Office of Muntinlupa City</span><span>Created by Gerald C. Esplana</span></div>
+    </footer>
+
+    <script src="js/site.js"></script>
+    <script src="login.js"></script>
+    <script src="js/calendar.js" defer></script>
+</body>
+</html>

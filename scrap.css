@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* NAVBAR STYLING */
+nav {
+    background: #FBFFE4; /* Light green background */
+    padding: 20px;
+    border: 2px solid #74ff96; /* Adds full border */
+    border-top: 2px solid #7aff9b; /* Ensures only top border is styled */
+    
+    display: flex;
+    justify-content: space-between; /* Separates logo from links */
+    align-items: center;
+    padding: 30px; /* Adds spacing */
+    position: relative;
+    flex-wrap: wrap; 
+
+
+
+
+
+    
+}
+
+/* Wrapper for navigation links */
+.navlinks {
+    display: flex;
+    justify-content: space-between; /* Ensures left & right links stay apart */
+    flex-grow: 1; /* Allows flexibility */
+    max-width: 100%; /* Takes full width */
+    padding: 0 20px; /* Adds padding for spacing */
+}
+
+/* NAVIGATION LINK GROUPS */
+.nav-right {
+    margin-left: 10%;
+    display: flex;
+    gap: 30px; /* Proper spacing between links */
+    flex: 1; /* Allows it to expand */
+    justify-content: flex-end; /* Aligns left */
+}
+
+.nav-left {
+    margin-right: 10%;
+    display: flex;
+    gap: 30px; /* Proper spacing between links */
+    flex: 1; /* Allows it to expand */
+    justify-content: flex-start; /* Aligns right */
+}
+
+/* LOGO STYLING */
+.ceslogo {
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* NAVIGATION LINKS */
+.nav-left a, .nav-right a {
+    font-family: 'Poppins', sans-serif; /* Stylish modern font */
+    color: #001f03; /* Dark green text */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Makes text larger */
+    font-weight: 500; /* Medium bold */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-left a:hover, .nav-right a:hover {
+    color: #2E6F3E; /* Dark green on hover */
+    transform: scale(1.1); /* Slightly enlarges the text */
+}
+
+/* Active Link */
+.nav-left a.active, .nav-right a.active {
+    color: #2E6F3E; /* Dark green */
+    font-weight: 600; /* Slightly bolder */
+    border-bottom: 2px solid #2E6F3E; /* Adds an underline effect */
+    padding-bottom: 5px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .navlinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .nav-left, .nav-right {
+        justify-content: center;
+        width: 100%;
+    }
+} */
+
+/* LOGO STYLING */
+.ceslogo {
+    position: absolute;
+    height: 150px;
+    top: 50%;  /* Moves it down to 50% of the navbar */
+    left: 50%; /* Centers it horizontally */
+    transform: translate(-50%, -50%);
+}
+
+/* NAVIGATION LINKS */
+.nav1, .nav2, .nav3, .nav4 {
+    font-family: 'Poppins', sans-serif; /* Stylish modern font */
+    color: #3D8D7A; /* Dark green text */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Makes text larger */
+    font-weight: 500; /* Medium bold */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-left a:hover, .nav-right a:hover {
+    color: #46ff74; /* Dark green on hover */
+    transform: scale(1.1); /* Slightly enlarges the text */
+}
+
+/* Active Link */
+.nav-left a.active, .nav-right a.active {
+    color: #49f674; /* Dark green */
+    font-weight: 600; /* Slightly bolder */
+    border-bottom: 2px solid #47f773; /* Adds an underline effect */
+    padding-bottom: 5px;
+}
+
+
+
+
+/* .ceslogo {
+    position:absolute;
+    margin-top: 15%;
+    align-items: center;
+} */
+
+/* .ceslogo {
+    position: absolute;
+    top: 11%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ */
+
+
+ #bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures it doesn't cover other elements */
+    filter: brightness(70%);
+}
+
+
+/* Ensure content can scroll */
+.overlay {
+    position: relative; /* Prevents it from fixing in place */
+    min-height: 100vh; /* Allows content to push down */
+}
+
+
+
+
+
+
+
+
+
+
+.TITLE button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 14px 14px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+   
+    }
+
+    .TITLE {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 40px;
+
+
+}
+
+.TITLE h1 {
+    font-size: 70px;
+    color: #efff74;
+    letter-spacing: .6rem;
+    padding-top: .5rem;
+    margin-bottom: 0.02%;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+.TITLE h3 {
+    font-size: 22px;
+    color: #78f12c;
+    letter-spacing: .2rem;
+    padding-top: .5rem;
+    margin-bottom: 0.02%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}

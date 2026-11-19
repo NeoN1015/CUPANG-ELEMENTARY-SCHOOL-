@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Main container (Calendar + Events Table) */
+.calendar-container {
+    display: flex;
+    border-color: #000000;
+    justify-content: space-between;
+    align-items: stretch;
+    /* width: 90%; */
+    height: 90vh;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+}
+
+/* Calendar Styling */
+.calendar {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+    min-height: 0;
+    
+}
+
+/* Events Table */
+.events {
+    flex: 1;
+    padding: 20px;
+    height: 80vh;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+table {
+    width: 100%;
+    height: 300px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+/* border color AND SIZE */
+th, td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: green;
+    font-size: 20px !important;  /* Adjust as needed */
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .events {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid #824242;
+        text-align: center;
+    }
+}
+
+
+/* event in the calendar color */
+
+.fc-daygrid-event {
+    background-color: yellowgreen !important; /* Changes background color */
+    border-color:#000000     !important; /* Changes border color */
+    color: black !important; /* Changes text color */
+    font-size: 14px !important;
+}
+
+
+
+/* Style Event Form */
+#eventForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#eventForm input, #eventForm button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#eventForm button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#eventForm button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+.fc-button {
+    background-color:green !important; /* Change to your desired color */
+    color: rgb(0, 0, 0) !important; /* Change text color */
+    border: none !important; /* Remove default border */
+}
+
+/* Hover effect */
+.fc-button:hover {
+    background-color: yellowgreen !important; /* Darker shade on hover */
+}
+
+/* Active (clicked) button */
+.fc-button-active {
+    background-color: rgb(2, 158, 2) !important;
+    color: white !important;
+}
+
+
+/* Fix week and day view height issues */
+.fc-view-harness {
+    height: 90% !important; /* Force FullCalendar views to fit */
+    min-height: 0 !important; /* Prevent unnecessary stretching */
+}
+
+/* Make sure FullCalendar does not overflow */
+.fc-timegrid-container, 
+.fc-scrollgrid-sync-table, 
+.fc-daygrid-body {
+    max-height: 100% !important;
+    overflow-y: auto !important; /* Enable scrolling if necessary */
+}
+
+
+.fc-toolbar-title {
+    font-size: 30px !important; /* Adjust size as needed */
+    font-weight: bold;
+    color: #000000; /* Change color if needed */
+}
+
+.fc-col-header-cell {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Style for event name */
+td {
+    font-weight: bold;
+    font-size: 15px;  /* Adjust font size */
+    color: #000000;   /* Adjust text color */
+}
+
+
+
+
+
+
+
+
+/* Style for the current day */
+.fc-day-today {
+    background-color: green    !important; /* Highlight current day with color */
+    color: white !important; /* Change text color */
+}
+
+/* Optional: If you want to change the font style of the current day */
+.fc-day-today .fc-day-number {
+    font-weight: bold;
+    font-size: 18px;  /* Adjust font size if needed */
+}
+
+
+
+
+/* Change the color of the grid lines (borders) between the days */
+.fc-daygrid-day {
+    border: 1px solid #000000 !important; /* Light grey border for each cell */
+}
+
+
+/* 
+.fc{
+    border: 1px solid #000000 !important;
+} */

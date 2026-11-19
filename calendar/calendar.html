@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Dashboard · CES</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/pics/web/seal.png" />
+  <link rel="stylesheet" href="/calendar/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+</head>
+<body>
+  <div class="eave" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="/home.html"><img src="/pics/web/seal.png" alt="" width="36" height="36" />CESMAIN <small>Teacher</small></a>
+    <nav>
+      <a href="#memos">Memos <span id="unreadBadge" class="badge count" hidden>0</span></a>
+      <a href="#events">Events</a>
+      <a href="/home.html">Public site</a>
+    </nav>
+    <span class="user" data-user-name></span>
+    <button type="button" class="small" data-change-password>Password</button>
+    <button type="button" class="small" data-logout>Logout</button>
+  </header>
+
+  <main>
+    <!-- Memos (read only) -->
+    <section class="card" id="memos">
+      <header><h2>Memos from the principal</h2></header>
+      <div id="memoList" class="memo-list"></div>
+    </section>
+
+    <!-- Events -->
+    <section class="card" id="events">
+      <header>
+        <h2>School events</h2>
+        <label class="inline">Show
+          <select id="eventFilter">
+            <option value="all">All events</option>
+            <option value="mine">Added by me</option>
+            <option value="pending">My pending events</option>
+          </select>
+        </label>
+        <button type="button" id="openModalBtn">+ Add event</button>
+      </header>
+      <div class="grid-2">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Event</th><th>Date</th><th>Time</th><th>Description</th><th>Actions</th></tr></thead>
+            <tbody id="eventTable"></tbody>
+          </table>
+        </div>
+        <div id="calendar"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Event dialog -->
+  <dialog id="eventModal">
+    <h2 id="modalTitle">Add event</h2>
+    <form id="eventForm" class="stack">
+      <p id="approvalNote" class="meta" style="font-size:13px;color:var(--warn)">New events and edits are shown publicly after the principal approves them.</p>
+      <label>Event name<input name="name" required maxlength="200" /></label>
+      <div class="row">
+        <label>Date<input type="date" name="date" required /></label>
+        <label>Category
+          <select name="category">
+            <option>General</option><option>Holiday</option><option>Exam</option><option>PTA</option><option>Program</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>Start time<input type="time" name="time" step="300" /></label>
+        <label>End time<input type="time" name="endTime" step="300" /></label>
+      </div>
+      <label>Description<textarea name="description" rows="3"></textarea></label>
+      <div class="buttons">
+        <button type="button" class="secondary" data-close-event>Cancel</button>
+        <button type="submit">Save event</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/calendar/api.js"></script>
+  <script src="/calendar/calendar.js"></script>
+  <script src="/calendar/view-memo.js"></script>
+</body>
+</html>

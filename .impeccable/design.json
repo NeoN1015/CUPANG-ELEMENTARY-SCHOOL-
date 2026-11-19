@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T00:00:00Z",
+  "title": "Design System: Cupang Elementary School (CESMAIN)",
+  "extensions": {
+    "colorMeta": {
+      "board": { "role": "primary", "displayName": "Enamel Board Green", "canonical": "#1f5a32", "tonalRamp": ["#001003", "#0b2d16", "#224c2e", "#3a6f48", "#5b9169", "#85b28f", "#afd4b6", "#daf8e0"] },
+      "board-hi": { "role": "primary", "displayName": "Lifted Board", "canonical": "#276b3d" },
+      "wood": { "role": "secondary", "displayName": "Narra Wood", "canonical": "#7a4a2a", "tonalRamp": ["#170600", "#381d0b", "#5c3821", "#825538", "#a67658", "#c59b81", "#e5c1ab", "#ffe8d7"] },
+      "wood-dark": { "role": "secondary", "displayName": "Dark Narra", "canonical": "#5c3620" },
+      "gold": { "role": "tertiary", "displayName": "Torch Gold", "canonical": "#efc45e", "tonalRamp": ["#160700", "#362000", "#593c00", "#7f5b00", "#a27c11", "#c1a156", "#e1c68b", "#ffecbe"] },
+      "gold-ink": { "role": "tertiary", "displayName": "Gold Ink", "canonical": "#6b4d06" },
+      "wall": { "role": "neutral", "displayName": "Shadowed Wall", "canonical": "#0f3a20", "tonalRamp": ["#020f05", "#132b1b", "#2b4a35", "#456c51", "#668d71", "#8daf96", "#b5d2bd", "#dff5e4"] },
+      "wall-2": { "role": "neutral", "displayName": "Deep Wall", "canonical": "#0b2e19" },
+      "pane": { "role": "neutral", "displayName": "Capiz Pane", "canonical": "#e4ebe3", "tonalRamp": ["#080d08", "#222721", "#3e443d", "#5d635c", "#7e847d", "#a1a7a0", "#c5cbc4", "#eaf1e9"] },
+      "pane-2": { "role": "neutral", "displayName": "Pane Shade", "canonical": "#d3ddd1" },
+      "ink": { "role": "neutral", "displayName": "Schoolroom Ink", "canonical": "#13261a", "tonalRamp": ["#060d08", "#1d2820", "#37463c", "#53675a", "#74887a", "#99aa9e", "#bfcec3", "#e6f2ea"] },
+      "ink-2": { "role": "neutral", "displayName": "Faded Ink", "canonical": "#3d5545" },
+      "on-wall": { "role": "neutral", "displayName": "Pane Light on Wall", "canonical": "#e4ebe3" },
+      "on-wall-2": { "role": "neutral", "displayName": "Faded Sign Green", "canonical": "#bcd9c4" },
+      "sign-paint": { "role": "neutral", "displayName": "Sign Paint", "canonical": "#f1f3ec" },
+      "field-bg": { "role": "neutral", "displayName": "Field White", "canonical": "#f6f8f5" },
+      "field-line": { "role": "neutral", "displayName": "Field Line", "canonical": "#b8c6ba" },
+      "danger": { "role": "neutral", "displayName": "Report Red", "canonical": "#a3332a", "tonalRamp": ["#220000", "#490906", "#74211b", "#a13a31", "#c85d51", "#e5887b", "#ffb2a6", "#ffddd3"] },
+      "danger-on-wall": { "role": "neutral", "displayName": "Report Red on Wall", "canonical": "#f0a399" },
+      "cat-exam": { "role": "neutral", "displayName": "Exam Violet (calendar category)", "canonical": "#5b4a8a" },
+      "cat-program": { "role": "neutral", "displayName": "Program Amber (calendar category; dashboard --warn)", "canonical": "#8a6410" },
+      "ops-bg": { "role": "neutral", "displayName": "Office Paper (dashboards)", "canonical": "#eef2ed" },
+      "ops-card": { "role": "neutral", "displayName": "Card Paper (dashboards)", "canonical": "#fbfcfa" },
+      "ops-line": { "role": "neutral", "displayName": "Hairline (dashboards)", "canonical": "#cfd9d0" },
+      "ops-muted": { "role": "neutral", "displayName": "Muted Label (dashboards)", "canonical": "#4d6353" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The school name on the signboard only (inner-page signboards: clamp(2.5rem, 7vw, 5rem)). Uppercase, balanced." },
+      "headline": { "displayName": "Headline", "purpose": "Section heads on the wall and split-section headings. Uppercase." },
+      "title": { "displayName": "Title", "purpose": "Headings inside bays, in board green. Uppercase." },
+      "painted-line": { "displayName": "Painted Line", "purpose": "The single gold facts line under the school name. Uppercase, wide tracking. Follows the name; never precedes a heading." },
+      "numeral": { "displayName": "Numeral", "purpose": "Event day numbers (tabular); same face scaled up for history years and the placing numeral." },
+      "lede": { "displayName": "Lede", "purpose": "Opening paragraph of a section, max 62ch." },
+      "body": { "displayName": "Body", "purpose": "All reading text on public pages; prose max 68ch." },
+      "label": { "displayName": "Label", "purpose": "Nav, buttons, table headers, metadata, chips. Uppercase, 0.08-0.16em tracking depending on size." },
+      "ops-body": { "displayName": "Operate Body", "purpose": "Dashboard body text; labels and tables 13-14px." },
+      "ops-title": { "displayName": "Operate Title", "purpose": "Dashboard card titles (22px sub-titles, 28px dialog titles). Uppercase, board green." }
+    },
+    "shadows": [
+      { "name": "board-hang", "value": "0 18px 40px -18px rgba(0,0,0,.6)", "purpose": "Signboard only, so it reads as hung on the wall." },
+      { "name": "seal-lift", "value": "drop-shadow(0 6px 10px rgba(0,0,0,.35))", "purpose": "Filter on the seal image on the signboard." },
+      { "name": "button-settle", "value": "0 6px 14px -8px rgba(15,58,32,.7)", "purpose": "Filled buttons at rest." },
+      { "name": "button-settle-hover", "value": "0 10px 18px -10px rgba(15,58,32,.8)", "purpose": "Filled buttons on hover, with a 1px lift." },
+      { "name": "drawer-dim", "value": "0 0 0 100vmax rgba(5,20,11,.6)", "purpose": "Scrim behind the open login drawer." },
+      { "name": "focus-glow", "value": "0 0 0 3px rgba(239,196,94,.6)", "purpose": "Focused fields and the event-detail panel (public and dashboards)." },
+      { "name": "focus-outline", "value": "outline: 3px solid #efc45e; outline-offset: 3px", "purpose": "Global :focus-visible ring (2px offset on calendar buttons and dashboards)." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "The house curve: shutter reveal, drawer slide, button lift." },
+      { "name": "shutter-reveal", "value": "clip-path inset(0 50% 0 50%) -> inset(0) over 1.1s ease-out; stagger .12s per bay (2nd .12s, 3rd .24s, 4th .36s); IntersectionObserver threshold .15; once per bay; only bays starting below 90% of viewport", "purpose": "Signature: window bays open like shutters the first time they enter view. Disabled under prefers-reduced-motion." },
+      { "name": "drawer-slide", "value": "transform translateX(105%) -> none, .45s ease-out", "purpose": "Login drawer from the right. No transition under reduced motion." },
+      { "name": "state-change", "value": ".2s", "purpose": "Color, border, background and lift transitions on nav links, buttons, fields; dashboard toast fade." },
+      { "name": "smooth-scroll", "value": "scroll-behavior: smooth; scroll-padding-top: 80px", "purpose": "In-page anchors (calendar, notices). Auto under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "signboard-stack", "value": "560px" },
+      { "name": "calendar-list", "value": "640px" },
+      { "name": "records-stack", "value": "700px" },
+      { "name": "footer-stack", "value": "800px" },
+      { "name": "ops-collapse", "value": "860px" },
+      { "name": "nav-fold", "value": "900px" },
+      { "name": "cal-board-stack", "value": "1000px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Board-green painted button for the main action in a bay.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Open the full calendar <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; background: #1f5a32; color: #fff; border: 2px solid #1f5a32; border-radius: 0; padding: 14px 22px; text-decoration: none; cursor: pointer; font: 700 .95rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 6px 14px -8px rgba(15,58,32,.7); transition: background .2s, transform .2s cubic-bezier(.16,1,.3,1), box-shadow .2s; } .ds-btn svg { width: 18px; height: 18px; } .ds-btn:hover { background: #0f3a20; border-color: #0f3a20; transform: translateY(-1px); box-shadow: 0 10px 18px -10px rgba(15,58,32,.8); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 3px solid #efc45e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on a pane: board outline, fills on hover.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Write to the principal</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: #1f5a32; border: 2px solid #1f5a32; border-radius: 0; padding: 14px 22px; text-decoration: none; font: 700 .95rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; transition: background .2s, color .2s; } .ds-btn-ghost:hover { background: #1f5a32; color: #fff; } .ds-btn-ghost:focus-visible { outline: 3px solid #efc45e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Wood eave over a sticky wall-green bar; current page in gold with a gold underline.",
+      "html": "<div class=\"ds-eave\"></div><header class=\"ds-topnav\"><a class=\"ds-mark\" href=\"#\">CESMAIN</a><nav><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav><button class=\"ds-login\" type=\"button\">Log in</button></header>",
+      "css": ".ds-eave { height: 14px; background: #7a4a2a; border-bottom: 2px solid #5c3620; } .ds-topnav { display: flex; align-items: center; gap: 24px; padding: 10px 24px; background: #0f3a20; border-bottom: 1px solid rgba(228,235,227,.12); } .ds-mark { margin-right: auto; color: #e4ebe3; text-decoration: none; font: 900 1.5rem/1 'Big Shoulders Display', 'Arial Narrow', sans-serif; letter-spacing: .06em; text-transform: uppercase; } .ds-topnav nav { display: flex; gap: 4px; } .ds-topnav nav a { color: #bcd9c4; text-decoration: none; padding: 10px 14px; font: 700 .875rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; border-bottom: 3px solid transparent; transition: color .2s, border-color .2s; } .ds-topnav nav a:hover { color: #e4ebe3; } .ds-topnav nav a[aria-current=page] { color: #efc45e; border-bottom-color: #efc45e; } .ds-topnav a:focus-visible, .ds-login:focus-visible { outline: 3px solid #efc45e; outline-offset: 3px; } .ds-login { background: transparent; color: #e4ebe3; border: 2px solid #bcd9c4; border-radius: 0; padding: 10px 16px; cursor: pointer; font: 700 .875rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; } .ds-login:hover { background: #e4ebe3; color: #0f3a20; border-color: #e4ebe3; }"
+    },
+    {
+      "name": "Signboard",
+      "kind": "custom",
+      "refersTo": "signboard",
+      "description": "The painted board-green sign in a 12px wood frame: seal left, lettered name, gold facts line, motto.",
+      "html": "<header class=\"ds-signboard\"><div class=\"ds-seal\" aria-hidden=\"true\"></div><div><h1>Cupang Elementary School</h1><p class=\"ds-painted\">Est. 1932 · School ID 136912 · Muntinlupa City</p><p class=\"ds-motto\">Culture of Excellence in Service and Management</p></div></header>",
+      "css": ".ds-signboard { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; background: #1f5a32; border: 12px solid #7a4a2a; padding: 32px 40px; box-shadow: 0 18px 40px -18px rgba(0,0,0,.6); } .ds-seal { width: 120px; height: 120px; border-radius: 50%; background: #e4ebe3; } .ds-signboard h1 { margin: 0; font: 900 clamp(2.75rem, 8.4vw, 6rem)/.95 'Big Shoulders Display', 'Arial Narrow', sans-serif; letter-spacing: .01em; text-transform: uppercase; color: #f1f3ec; text-shadow: 0 2px 0 rgba(0,0,0,.18); text-wrap: balance; } .ds-painted { margin: 14px 0 0; font: 700 clamp(.95rem, 1.6vw, 1.3rem)/1.3 'Big Shoulders Display', 'Arial Narrow', sans-serif; letter-spacing: .24em; text-transform: uppercase; color: #efc45e; } .ds-motto { margin: 8px 0 0; color: #bcd9c4; font: 400 1rem/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; }"
+    },
+    {
+      "name": "Window Bays",
+      "kind": "card",
+      "refersTo": "window-bay",
+      "description": "Pane cells in a wood frame; the grid gap is the mullion. Includes the next-events list with the gold Today chip.",
+      "html": "<section class=\"ds-bays\"><div class=\"ds-bay\"><h2>Next on the calendar</h2><ol class=\"ds-next\"><li class=\"today\"><span class=\"d\">19</span><div><span class=\"w\">Nov Thu · 7:00 AM</span><b>Flag ceremony</b></div></li><li><span class=\"d\">22</span><div><span class=\"w\">Nov Sun · 1:00 PM</span><b>PTA General Assembly</b></div></li></ol></div><div class=\"ds-bay\"><h2>Visit the school</h2><p>Your message goes straight to the principal's office.</p></div></section>",
+      "css": ".ds-bays { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; background: #7a4a2a; border: 12px solid #7a4a2a; } .ds-bay { background: #e4ebe3; color: #13261a; padding: 28px; font: 400 1.125rem/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; } .ds-bay h2 { margin: 0 0 18px; font: 900 clamp(1.75rem, 2.6vw, 2.25rem)/.95 'Big Shoulders Display', 'Arial Narrow', sans-serif; text-transform: uppercase; color: #1f5a32; } .ds-next { list-style: none; padding: 0; margin: 0; } .ds-next li { position: relative; display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 12px 0; border-top: 2px solid #d3ddd1; } .ds-next .d { font: 900 2.6rem/.9 'Big Shoulders Display', 'Arial Narrow', sans-serif; color: #1f5a32; font-variant-numeric: tabular-nums; } .ds-next .w { display: block; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: #3d5545; } .ds-next li.today .d { color: #6b4d06; } .ds-next li.today::before { content: 'Today'; position: absolute; right: 0; top: 12px; background: #efc45e; color: #13261a; font: 700 .7rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; padding: 5px 8px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Square field on a pane; focus turns the border board green with a gold glow.",
+      "html": "<label class=\"ds-field\"><span>Your email</span><input type=\"email\" placeholder=\"name@example.com\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; font: 400 1.125rem/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; color: #13261a; } .ds-field span { font-weight: 700; font-size: .95rem; } .ds-field input { font: inherit; color: #13261a; background: #f6f8f5; border: 2px solid #b8c6ba; border-radius: 0; padding: 12px 14px; transition: border-color .2s, background .2s; } .ds-field input::placeholder { color: #5d7262; } .ds-field input:hover { border-color: #3d5545; } .ds-field input:focus { outline: none; border-color: #1f5a32; background: #fff; box-shadow: 0 0 0 3px rgba(239,196,94,.6); } .ds-field input[aria-invalid=true] { border-color: #a3332a; }"
+    },
+    {
+      "name": "Sample Stamp",
+      "kind": "chip",
+      "refersTo": "sample-stamp",
+      "description": "Rotated rubber-stamp label required on all placeholder content.",
+      "html": "<span class=\"ds-sample\">Sample</span>",
+      "css": ".ds-sample { display: inline-block; font: 700 .7rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: #a3332a; border: 2px solid #a3332a; padding: 5px 8px; transform: rotate(-2deg); }"
+    },
+    {
+      "name": "Role Tabs",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "Segmented role switch in the login drawer: 2px board frame, active tab filled.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button class=\"on\" role=\"tab\" aria-selected=\"true\">Principal</button><button role=\"tab\">Teacher</button><button role=\"tab\">Student</button></div>",
+      "css": ".ds-tabs { display: grid; grid-template-columns: repeat(3, 1fr); border: 2px solid #1f5a32; background: #e4ebe3; } .ds-tabs button { font: 700 .85rem/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; padding: 12px 6px; background: transparent; color: #1f5a32; border: 0; border-radius: 0; cursor: pointer; } .ds-tabs button + button { border-left: 2px solid #1f5a32; } .ds-tabs button.on { background: #1f5a32; color: #fff; } .ds-tabs button:hover:not(.on) { background: #d3ddd1; } .ds-tabs button:focus-visible { outline: 3px solid #efc45e; outline-offset: 2px; }"
+    },
+    {
+      "name": "Operate Card",
+      "kind": "card",
+      "refersTo": "ops-card",
+      "description": "Dashboard (restrained variant): flat paper card, hairline border, Big Shoulders title, compact square controls.",
+      "html": "<section class=\"ds-ops\"><header><h2>School events</h2><button class=\"ds-ops-btn\">+ Add event</button><button class=\"ds-ops-btn sec\">Cancel</button></header><p class=\"ds-ops-meta\">New events are shown publicly after the principal approves them.</p></section>",
+      "css": ".ds-ops { background: #fbfcfa; border: 1px solid #cfd9d0; border-radius: 0; padding: 20px; color: #13261a; font: 400 15px/1.5 'Atkinson Hyperlegible', system-ui, sans-serif; } .ds-ops header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; } .ds-ops h2 { margin: 0 auto 0 0; font: 900 30px/1 'Big Shoulders Display', 'Arial Narrow', sans-serif; text-transform: uppercase; color: #1f5a32; } .ds-ops-btn { font: inherit; cursor: pointer; border-radius: 0; padding: 8px 14px; border: 1px solid #1f5a32; background: #1f5a32; color: #fff; } .ds-ops-btn:hover { background: #0f3a20; border-color: #0f3a20; } .ds-ops-btn.sec { background: #fff; color: #1f5a32; } .ds-ops-btn:focus-visible { outline: 3px solid #efc45e; outline-offset: 2px; } .ds-ops-meta { margin: 0; font-size: 13px; color: #4d6353; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Schoolhouse Signboard",
+    "overview": "The site is the front of the schoolhouse. A hand-painted enamel-green signboard carries the seal and the school's lettered name; beneath it hangs a row of window bays framed in thick narra wood, and each bay is a light capiz pane you read through. Everything else sits on a deep green wall. The metaphor is structural, not decorative: frames are real borders and grid gaps in wood colour, panes are the only light reading surfaces, and the gold of the seal's torch is the single accent.\n\nThe public pages are dark, painted and plain-spoken: condensed signage capitals for anything that would be lettered on a building, a highly legible humanist sans for everything a community member reads. Density is generous (18px body, wide gutters, 56–104px between sections) because the audience includes older residents reading on phones. There are no textures, no faux distress and no rounded corners; the \"paint\" is flat colour.\n\nThe staff dashboards (principal and teacher) are the same world in its restrained, light Operate form: the wood eave and the deep-green bar stay at the top, signage capitals stay on section titles, but the work surface turns to pale paper cards with hairline borders, a 15px body and compact controls. The world is carried by the strip and the headings, not by frames around every card.",
+    "keyCharacteristics": [
+      "One painted signboard per page (full on Home, `small` on inner pages), always board green framed in 12px wood.",
+      "Content lives in window bays: pane-coloured cells separated by 12px wood mullions (grid gap = frame width).",
+      "Square corners everywhere; borders are the form language.",
+      "Gold is the one accent: current nav item, today marker, focus ring, painted line, history years.",
+      "Signage caps (Big Shoulders Display 900, uppercase) for names and headings; Atkinson Hyperlegible for reading.",
+      "Signature motion: bays open like shutters (clip-path) the first time they enter view; reduced motion shows them open.",
+      "Dashboards: light, flat, compact, same fonts, same greens, no frames."
+    ],
+    "rules": [
+      { "name": "The One Torch Rule", "body": "Gold is the only accent and it always means \"here / now / focus\": current page, today, keyboard focus, the painted line. Never use it as a fill for decoration or a second CTA colour by default.", "section": "colors" },
+      { "name": "The Pane Rule", "body": "Long reading happens on pane (light) surfaces in ink, or on the wall in on-wall. Never set body copy on board green inside a bay; board green is for signs, not for reading.", "section": "colors" },
+      { "name": "The Lettered Name Rule", "body": "Anything that would be painted on the building (school name, section names, values, years) is Big Shoulders uppercase. Anything a person reads as a sentence is Atkinson in sentence case.", "section": "typography" },
+      { "name": "The Frame-Not-Float Rule", "body": "Separate surfaces with wood frames and value contrast; never with card shadows. A pane inside a frame never carries its own shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** put every content cluster in window bays: pane cells with a 12px wood frame and 12px wood gap.",
+      "**Do** keep one signboard per page, board green with a 12px wood border, seal left of the lettered name.",
+      "**Do** keep every corner square (0 radius) on both the public site and the dashboards.",
+      "**Do** use gold only for current/today/focus and the painted facts line; use gold-ink when gold must sit on a pane as text.",
+      "**Do** set names, headings, years and values in Big Shoulders Display 900 uppercase, and sentences in Atkinson Hyperlegible at 1.125rem or larger on public pages.",
+      "**Do** mark every placeholder with the rotated SAMPLE stamp until it is replaced with real content.",
+      "**Do** caption posters below the image on the pane, and use plain (mullion-free) frames for posters and lettered signs.",
+      "**Do** honour reduced motion: shutters render open, scroll is not smooth, the drawer does not slide.",
+      "**Do** keep the dashboards light and flat, carrying the world only through the eave, the wall-green bar, Big Shoulders titles and the gold focus glow."
+    ],
+    "donts": [
+      "**Don't** add textures, wood grain images, paint distress or faux wear; the paint is flat colour.",
+      "**Don't** use rounded corners or pill shapes anywhere.",
+      "**Don't** add drop shadows to bays or cards; separation is the frame and the wall behind it.",
+      "**Don't** introduce a second accent colour or use category colours outside the calendar and its legend.",
+      "**Don't** lay mullions over posters or lettered photos, or put captions over a poster's lettering.",
+      "**Don't** fall back to a photo hero with a card grid; the signboard and bays are the first viewport.",
+      "**Don't** put staff controls or the Operate styling on public pages."
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+/* Memo Modal Styles */
+.memo-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.memo-card {
+    background: white;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 450px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.memo-header {
+    background: #80ED99;
+    color: #000;
+    padding: 15px 20px;
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+
+.memo-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.memo-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.memo-body {
+    padding: 20px;
+}
+
+.memo-form-group {
+    margin-bottom: 15px;
+}
+
+.memo-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+.memo-form-input, 
+.memo-form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.memo-form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.memo-form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.memo-form-row .memo-form-group {
+    flex: 1;
+}
+
+.memo-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#saveMemo, 
+#closeMemoBtn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+
+#saveMemo {
+    background-color: #80ED99;
+    color: #000;
+}
+
+#saveMemo:hover {
+    background-color: #57CC99;
+}
+
+#closeMemoBtn {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+#closeMemoBtn:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .memo-form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .memo-card {
+        width: 95%;
+    }
+}

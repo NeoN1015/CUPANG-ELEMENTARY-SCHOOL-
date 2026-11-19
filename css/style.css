@@ -1,0 +1,1302 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+img {
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #90EE90;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading-link {
+  text-align: center;
+  background: url(../images/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading-link h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: black;
+}
+.heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
+}
+.heading-link p a {
+  color: #90EE90;
+}
+.heading-link p a:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #22577A;
+  background: #fff;
+  color: green;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: green;
+  color: #fff;
+  font-size: 2.1rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: green ;
+  border-radius: 2px;
+  border-color: #000000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  
+  color: black;
+  font-weight: bolder;
+}
+.header .logo i {
+  color: #90EE90;
+  
+}
+.header .navbar {
+  position: relative;
+  
+}
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+  display: none;
+}
+.header .navbar #close-navbar:hover {
+  transform: rotate(90deg);
+}
+
+.header .navbar a {
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(255, 245, 245);
+}
+.header .navbar a:hover {
+  color: #90EE90;
+}
+.header .icons div {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: yellowgreen;
+  margin-left: 1.5rem;
+}
+.header .icons div:hover {
+  color: #90EE90;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.account-form {
+  position: fixed;
+  top: 0;
+  right: 105%;
+  width: 35rem;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  height: 100%;
+  z-index: 1200;
+  padding: 2rem;
+  text-align: center;
+}
+.account-form.active {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  right: 0;
+}
+.account-form #close-form {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #000000;
+}
+.account-form #close-form:hover {
+  transform: rotate(90deg);
+}
+.account-form form {
+  border: 0.1rem solid green;
+  padding: 2rem;
+  display: none;
+  border-radius: 20px;
+}
+.account-form form.active {
+  display: block;
+}
+.account-form form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.account-form form .box {
+  width: 100%;
+  border: 0.1rem solid green;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+  border-radius: 8px;
+}
+.account-form form .flex {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.account-form form .flex label {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+}
+.account-form form .flex a {
+  font-size: 1.5rem;
+  color: #777;
+  margin-left: auto;
+}
+.account-form form .flex a:hover {
+  text-decoration: underline;
+  color:#90EE90;
+}
+.account-form form .btn {
+  width: 100%;
+}
+.account-form .buttons .btn {
+  margin: 0 0.8rem;
+}
+.account-form .buttons .btn.active {
+  background: #90EE90;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.home {
+  padding: 0;
+}
+.home .swiper-slide {
+  display: flex;
+  align-items: center;
+  height: 60rem;
+  background-size: cover !important;
+  background-position: center !important;
+  
+}
+.home .swiper-slide .content {
+  width: 50rem;
+  
+}   
+.swiper {
+  height: 400px; /* ✅ Set fixed height for the whole swiper */
+  overflow: hidden; /* Prevent content overflow */
+}
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Adjust based on your layout or desired section height */
+  background-size: cover;
+  background-position: center;
+}
+
+.dim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%; /* Dim only the left half */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); /* Darker black to Transparent gradient */
+  z-index: 0; /* Ensure the gradient stays behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content stays on top of the gradient */
+  padding: 20px;
+  color: white; /* Optional: Adjust text color for contrast */
+}
+
+
+
+.home .swiper-slide .content h3 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: black;
+  color: #fff;
+}
+.home .swiper-slide .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+  color: #eee;
+  padding: 3rem 0;
+}
+
+
+
+
+.Core-Values {
+ 
+  height: 700px; /* Set your desired height */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* To ensure content doesn't overflow */
+}
+.reviews-slider {
+  width: 100%; /* Ensure the swiper container fits within the fixed width */
+  height: 100%; /* Ensure the swiper container fits within the fixed height */
+}
+
+
+
+
+
+.subjects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+.subjects .box-container .box {
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 0.1rem solid #008000;
+  cursor: pointer;
+}
+.subjects .box-container .box:hover {
+  transition: 0.5sec ease-in-out;
+  background: #57CC99;
+}
+.subjects .box-container .box:hover h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.subjects .box-container .box img {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+.subjects .box-container .box h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  padding: 0.5rem 0;
+}
+.subjects .box-container .box p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+
+
+.news-swiper {
+  height: 500px; /* ✅ Set fixed height for the whole swiper */
+  overflow: hidden; 
+}
+
+.news .news-slide {
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  background: #008000;
+  overflow: hidden;
+  height: 100%;
+}
+
+.news .news-slide:hover .content {
+  bottom: 0;
+}
+
+
+.news .news-slide .news-image {
+  padding: 1.5rem;
+  flex: 1 1 auto;
+  overflow: hidden; 
+  height: 700px; 
+  position: relative;
+}
+
+.news .news-slide .news-image img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.news .news-slide .news-image h3 {
+  position: relative;
+  z-index: 1; /* bring text in front */
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* optional: makes white text readable */
+  margin: 0;
+  padding: 1rem;
+}
+
+.news .news-slide .content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  background: #90EE90;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  
+}
+
+.news .news-slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  
+  color: #070707;
+}
+
+.news .news-slide .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+ 
+  padding: 0.5rem 0;
+  color: #000000;
+}
+
+
+
+.home-courses .slide .content .btn:hover {
+  background: #444;
+}
+
+
+
+
+
+
+
+
+
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.about .image {
+  flex: 1 1 40rem;
+  text-align: center;
+  
+}
+.about .image img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.about .content {
+  flex: 1 1 40rem;
+  text-align: center;
+  
+}
+.about .content .about-title {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: #000000;
+}
+.about .content p {
+  font-size:1.8rem;
+  line-height: 2;
+  color: #000000;
+  padding: 0.5rem 0;
+  margin-bottom: 20px;
+}
+.about .content .icons-container {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+
+  
+}
+.about .content .icons-container .icons {
+  text-align: center;
+  padding: 2rem 1rem;
+  border: 0.1rem solid  yellowgreen;
+  border-width: 3px;
+  
+  background: #008000;
+  
+  
+}
+.about .content .icons-container .icons img {
+  height: 5rem;
+  margin-bottom: 0.3rem;
+}
+.about .content .icons-container .icons h3 {
+  padding: 0.3rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+.about .content .icons-container .icons span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #000000;
+}
+
+
+
+
+
+
+.INFO1 .slide {
+  text-align: center;
+}
+.INFO1 .slide:hover .org-image img {
+  background: #90EE90;
+}
+.INFO1 .slide:hover .org-image .share {
+  bottom: 0;
+}
+.INFO1 .slide .org-image {
+  position: relative;
+  
+  overflow: hidden;
+}
+.INFO1 .slide .org-image img {
+  background: #008000;
+  border-color: yellowgreen;
+  border: 10px;
+  border-radius: 50%;
+  width: 100%;
+}
+.INFO1 .slide .org-image .share {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  right: 0;
+  background: rgba(39, 39, 39, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.INFO1 .slide .org-image .share a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+.INFO1 .slide .org-image .share a:hover {
+  color: #008000;
+  font-size: 2.5rem;
+}
+.INFO1 .slide .content {
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.INFO1 .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.INFO1 .slide .content span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+.Core-Values .slide {
+  text-align: center;
+
+  text-shadow: 1px 1px 4px rgba(17, 111, 18, 0.6); 
+}
+.Core-Values .slide p {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffffff;
+  /* position: relative; */
+  background: #008000  ;
+  border: 1px solid #000000;
+  
+  border-radius: 40px;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  user-select: none;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Core-Values .slide img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Core-Values .slide h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: black;
+  padding: 0.5rem 0;
+}
+.Core-Values .slide .stars {
+  font-size: 1.5rem;
+  color: #90EE90;
+}
+.Core-Values h1 {
+  
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+
+
+.Achievements .box-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(30rem, 1fr));
+  gap: 2rem;
+  
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1200px) {
+  .Achievements .box-container {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  }
+}
+
+/* For mobile landscape */
+@media (max-width: 768px) {
+  .Achievements .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile portrait */
+@media (max-width: 480px) {
+  .Achievements .box-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.Achievements .box-container .box:hover .achievement-image img {
+  transform: scale(1.1);
+  
+}
+.Achievements .box-container .box:hover .achievement-image h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+  
+}
+.Achievements .box-container .box.hide {
+  display: none;
+}
+.Achievements .box-container .box .achievement-image {
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.Achievements .box-container .box .achievement-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.Achievements .box-container .box .content {
+  padding: 1rem;
+  text-align: center;
+  border: 0.1rem solid #90EE90;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.Achievements .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.Achievements .box-container .box .content p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #777;
+}
+.Achievements .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 0.1rem solid #90EE90;
+}
+.Achievements .box-container .box .content .icons span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+.Achievements .box-container .box .content .icons span i {
+  color: #008000;
+  padding-right: 0.5rem;
+}
+.Achievements .load-more {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+.contact .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+}
+.contact .icons-container .icons {
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 0.1rem solid #008000;
+  background: rgb(253, 253, 115);
+  
+}
+
+
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%; 
+  overflow: hidden;
+  
+}
+
+.image iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+}
+
+
+
+
+
+.contact .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  background: #90EE90;
+  
+}
+.contact .icons-container .icons h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+  padding: 0.5rem 0;
+}
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+}
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+.contact .row .image img {
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 40rem;
+  border: 0.1rem solid #90EE90;
+  padding: 2rem;
+}
+.contact .row form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 1rem;
+}
+.contact .row form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #90EE90;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+.contact .row form textarea {
+  height: 13rem;
+  resize: none;
+}
+
+.faq .accordion-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  
+}
+.faq .accordion-container .accordion {
+  flex: 1 1 40rem;
+  border: 0.1rem solid #90EE90;
+}
+.faq .accordion-container .accordion.active .accordion-heading {
+  background: #90EE90;
+}
+.faq .accordion-container .accordion.active .accordion-heading h3 {
+  color: #fff;
+}
+.faq .accordion-container .accordion.active .accordion-heading i {
+  color: #fff;
+  transform: rotate(180deg);
+}
+.faq .accordion-container .accordion.active .accordion-content {
+  display: block;
+}
+.faq .accordion-container .accordion .accordion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+.faq .accordion-container .accordion .accordion-heading h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.faq .accordion-container .accordion .accordion-heading i {
+  font-size: 2rem;
+  color:#90EE90;
+}
+.faq .accordion-container .accordion .accordion-content {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  border-top: 0.1rem solid #90EE90;
+  display: none;
+}
+
+.footer {
+  background: #008000;
+    
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 2rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  
+  padding: 1rem 0;
+}
+.footer .box-container .box h3 i {
+  color: #90EE90;
+}
+.footer .box-container .box .share {
+  margin-top: 1rem;
+  
+}
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .box-container .box .share a:hover {
+  color: yellowgreen;
+  font-size: 3rem;
+  animation: 0.5s ease-in-out;
+}
+.footer .box-container .box .link {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffffff;
+  padding: 0.5rem 0;
+  display: block;
+}
+.footer .box-container .box .link:hover {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #90EE90;
+  margin-bottom: 1rem;
+}
+.footer .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  border-top: 0.1rem solid #90EE90;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 30rem;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 1200;
+  }
+  .header .navbar #close-navbar {
+    display: block;
+  }
+  .header .navbar.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    right: 0;
+  }
+  .header .navbar a {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .home .slide .content {
+    font-size: 2.4rem;
+  }
+  /* .Achievements{
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  } */
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .about .content .about-title {
+    font-size: 4rem;
+  }
+  
+
+
+}
+
+
+
+
+.fa-calendar, .fa-star, .fa-id-card {
+  font-size: 50px; /* Adjust size */
+  color: #ffffff; /* Optional: Change color */
+  padding-bottom: 10px;
+}
+
+
+
+
+
+.facility .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44rem, 1.5fr));
+  gap: 2rem;
+}
+.facility .box-container .box:hover .fac-image img {
+  transform: scale(1.1);
+}
+.facility .box-container .box:hover .fac-image h3 {
+  font-size: 1.5rem;  
+  text-transform: capitalize;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+}
+.facility .box-container .box.hide {
+  display: none;
+}
+.facility .box-container .box .fac-image {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.facility .box-container .box .fac-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.facility .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid #90EE90;
+}
+.facility .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.facility .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #3b3b3b;
+}
+.facility .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-top: 0.1rem solid green;
+}
+.facility .box-container .box .content .icons span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+.facility .box-container .box .content .icons span i {
+  color: #90EE90;
+  padding-right: 0.5rem;
+}
+
+
+@media (max-width: 991px) {
+  .about .content .about-title {
+    font-size: 3.2rem;
+  }
+
+  .about .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .icons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .icons {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .content .about-title {
+    font-size: 2.8rem;
+  }
+
+  .about .icons h3 {
+    font-size: 1.8rem;
+  }
+
+  .about .icons span {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .about .content .icons-container .icons i {
+    font-size: 2rem;
+  }
+
+  .about .content .icons-container .icons h3 {
+    font-size: 1.2rem;
+  }
+
+  .about .content .icons-container .icons span {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+.Announcements .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.Announcements .box-container .box:hover .announcement-image img {
+  transform: scale(1.1);
+}
+.Announcements .box-container .box:hover .announcement-image h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+}
+.Announcements .box-container .box.hide {
+  display: none;
+}
+.Announcements .box-container .box .announcement-image {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.Announcements .box-container .box .announcement-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Announcements .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid #90EE90;
+}
+.Announcements .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+.Announcements .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+.Announcements .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-top: 0.1rem solid #207420;
+}
+.Announcements .box-container .box .content .icons span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+}
+.Announcements .box-container .box .content .icons span i {
+  color: #90EE90;
+  padding-right: 0.5rem;
+}
+.Announcements .load-more {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ---- Role-based login panel ---- */
+.account-form .role-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+.account-form .role-tab {
+  flex: 1;
+  padding: 0.9rem 0.4rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid green;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.account-form .role-tab.active {
+  background: green;
+  color: #fff;
+}
+.account-form .role-label {
+  display: block;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.account-form .login-message {
+  color: #c0392b;
+  font-size: 1.4rem;
+  min-height: 1.8rem;
+}
+.account-form .login-hint {
+  font-size: 1.3rem;
+  color: #777;
+  margin: 1rem 0;
+}
+.account-form .visitor-btn {
+  width: 100%;
+  background: #fff;
+  color: green;
+  border: 0.1rem solid green;
+}
+.account-form .logged-in {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.account-form .logged-in[hidden] {
+  display: none;
+}
+.contact .form-status {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  min-height: 2rem;
+}

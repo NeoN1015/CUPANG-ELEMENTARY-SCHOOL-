@@ -1,0 +1,17 @@
+nav {
+        margin-top: 2%;
+        background: rgba(255,255,255, 0.15);
+        backdrop-filter: blur(18px);
+        padding: 1rem;
+        position: absolute;  /* fix: fixed the navbar at the top of the page*/
+        width: 88%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2rem;
+        border-radius: 30px;
+        border: 1px solid rgba(255,255,255,0.5);
+        box-shadow: 6px 6px rgba(0, 0, 0, 0.5);
+}
+body{
+        background: linear-gradient(90deg, rgb(16, 43, 20) 0%, rgb(121, 231, 156) 86%);
+}
