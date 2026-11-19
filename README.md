@@ -1,6 +1,6 @@
 # Cupang Elementary School Website
 
-**Demo URL:** [Open the visitor-only website](https://neon1015.github.io/CUPANG-ELEMENTARY-SCHOOL-/) (available after GitHub Pages is enabled below)
+**Live demo:** [Visit the visitor-only website](https://neon1015.github.io/CUPANG-ELEMENTARY-SCHOOL-/)
 
 The public demo shares information about Cupang Elementary School without requiring visitors to sign in or create an account.
 
@@ -16,8 +16,6 @@ The demo does not include staff dashboards, account management, private memos, o
 ## Deployment
 
 GitHub Pages hosts the static visitor site. A GitHub Actions workflow builds it from the public HTML, CSS, JavaScript, and images whenever changes are pushed to `main`. GitHub Pages does not run the Node.js server or SQLite database used by the full application.
-
-For the first deployment, open this repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. Then rerun the **Deploy visitor demo** workflow from the Actions tab, or push another commit to `main`.
 
 The Pages build removes login controls and replaces the database-backed contact form with public contact information. No visitor submissions or private account data are part of the demo.
 
