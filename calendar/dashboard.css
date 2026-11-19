@@ -139,3 +139,21 @@ button, .btn, input, select, textarea, .badge { border-radius: 0; }
 button:not(.secondary):not(.danger):not(.small):hover, .btn:hover { background: var(--green-deep); border-color: var(--green-deep); }
 button.secondary:hover { background: var(--green-light); }
 button.danger:hover { background: #fbe9e7; }
+
+/* Device tuning */
+main { max-width: 1440px; }
+@media (pointer: coarse) {
+  button, .btn, .topbar nav a, input, select { min-height: 44px; }
+  button.small { min-height: 40px; padding: 8px 12px; }
+  .topbar nav a { display: inline-flex; align-items: center; }
+}
+@media (max-width: 640px) {
+  .topbar { padding: 8px 12px; gap: 8px; }
+  .topbar nav { order: 3; flex-basis: 100%; overflow-x: auto; flex-wrap: nowrap; }
+  .topbar nav a { white-space: nowrap; }
+  .card { padding: 16px; }
+  .card > header { gap: 8px; }
+  .card > header h2 { font-size: 26px; flex-basis: 100%; }
+  main { padding: 12px; gap: 16px; }
+}
+@media (pointer: coarse) { .topbar .brand { min-height: 44px; } }
