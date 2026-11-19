@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const output = path.join(root, "site");
 const pages = ["home.html", "about.html", "achievements.html", "facilities.html", "contact.html"];
+const version = process.env.GITHUB_SHA || "local";
 
 function replaceOnce(content, pattern, replacement, description) {
   const matches = content.match(pattern);
@@ -51,6 +52,8 @@ for (const page of pages) {
     );
   }
 
+  html = html.replaceAll('src="js/site.js"', `src="js/site.js?v=${version}"`);
+  html = html.replaceAll('src="js/calendar.js" defer', `src="js/calendar.js?v=${version}" defer`);
   await writeFile(path.join(output, page), html);
 }
 
