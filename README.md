@@ -22,3 +22,5 @@ The Pages build removes login controls and replaces the database-backed contact 
 ## Privacy and publishing
 
 Only publish information intended for the public. Do not upload `.env` files, database files, passwords, private messages, or student/staff records. Review all photos and school details before publishing.
+
+Created by Gerald C. Esplana
