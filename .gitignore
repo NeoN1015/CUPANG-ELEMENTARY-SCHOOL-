@@ -6,5 +6,6 @@ node_modules/
 *.sqbpro
 legacy/
 sqlite3/
+site/
 .impeccable/mocks/
 .impeccable/review/

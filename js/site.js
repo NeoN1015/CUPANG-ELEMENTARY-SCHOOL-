@@ -98,7 +98,7 @@
       const n = parseInt(h, 10);
       return `${n % 12 || 12}:${m} ${n >= 12 ? "PM" : "AM"}`;
     };
-    fetch("/api/events")
+    fetch("api/events")
       .then((r) => (r.ok ? r.json() : []))
       .then((events) => {
         const upcoming = events.filter((e) => e.date >= today).slice(0, 3);

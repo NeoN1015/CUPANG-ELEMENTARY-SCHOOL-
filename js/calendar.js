@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return `${hour % 12 || 12}:${m} ${hour >= 12 ? "PM" : "AM"}`;
     }
 
-    fetch("/api/events")
+    fetch("api/events")
         .then((res) => (res.ok ? res.json() : []))
         .then((events) => {
             if (eventTable) {

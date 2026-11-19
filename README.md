@@ -1,40 +1,24 @@
 # Cupang Elementary School Website
 
-## Visitor-only live demo proposal
+**Live demo:** [Visit the visitor-only website](https://neon1015.github.io/CUPANG-ELEMENTARY-SCHOOL-/)
 
-This project can be published as a public, read-only website for visitors to learn about Cupang Elementary School. The demo would focus on public information and would not require visitors to sign in or create an account.
+The public demo shares information about Cupang Elementary School without requiring visitors to sign in or create an account.
 
-### Proposed visitor experience
+## Visitor pages
 
 - Browse school information, facilities, achievements, and public announcements.
-- View public event information when it is provided as static website content.
+- View the school calendar. The demo has no database, so live event data is not available.
 - Find the school's location and public contact details.
 - Use the website on desktop and mobile devices.
 
-### Not included in this demo
+The demo does not include staff dashboards, account management, private memos, or event approval. It does not collect or store visitor messages; use the school's Facebook page or the contact details on the Contact page.
 
-- Principal, teacher, or student logins and dashboards.
-- Account management, event approval, and private staff memos.
-- A database or storage of visitor-submitted information.
-- A working contact form unless a separate form service is configured.
+## Deployment
 
-## Hosting approach
+GitHub Pages hosts the static visitor site. A GitHub Actions workflow builds it from the public HTML, CSS, JavaScript, and images whenever changes are pushed to `main`. GitHub Pages does not run the Node.js server or SQLite database used by the full application.
 
-GitHub Pages can host a static website at no cost. It serves HTML, CSS, JavaScript, and image files, but it does not run the Node.js server or SQLite database used by the full application.
-
-The current project includes server-backed features. Before publishing a visitor-only version on GitHub Pages, those features should be removed or replaced with static public content. API-dependent event and contact features will not work on GitHub Pages without a separate backend or an external form service.
-
-Once the site is prepared as a static version:
-
-1. Push the public website files to this GitHub repository.
-2. In the repository settings, open **Pages**.
-3. Choose the deployment branch and folder containing the static site files.
-4. Open the published Pages URL and test the visitor experience.
+The Pages build removes login controls and replaces the database-backed contact form with public contact information. No visitor submissions or private account data are part of the demo.
 
 ## Privacy and publishing
 
 Only publish information intended for the public. Do not upload `.env` files, database files, passwords, private messages, or student/staff records. Review all photos and school details before publishing.
-
-## Current status
-
-This README describes the visitor-only live-demo proposal. The repository needs a static-ready version of the website before it can be published as a working GitHub Pages demo.
